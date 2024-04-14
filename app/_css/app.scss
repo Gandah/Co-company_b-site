@@ -1,0 +1,41 @@
+@use './queries.scss' as *;
+@use './type.scss' as *;
+
+
+:root {  
+    --padding-16: 2rem;
+    --padding-24: 3rem;
+    
+    @include mid-break {
+        --padding-16: 4rem;
+        --padding-24: 6rem;
+    }
+  }
+
+html{
+    @extend %body;
+}
+
+h1 {
+    @extend %h1;
+  }
+  
+  h2 {
+    @extend %h2;
+  }
+  
+  h3 {
+    @extend %h3;
+  }
+  
+  h4 {
+    @extend %h4;
+  }
+  
+  h5 {
+    @extend %h5;
+  }
+  
+  h6 {
+    @extend %h6;
+  }

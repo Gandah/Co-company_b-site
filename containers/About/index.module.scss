@@ -1,0 +1,65 @@
+@use '../../app/_css/queries.scss' as *;
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutSubContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    
+    @include mid-break{
+        flex-wrap: wrap;
+        // flex-direction: column;
+        
+    }
+}
+
+.aboutHeading{
+    color: var(--perennialGreen-color);
+    text-transform: uppercase;
+
+
+     @include mid-break{
+        text-align: center;
+    }
+}
+
+.aboutParagraph{
+    text-wrap: balance;
+    text-align: center;
+}
+
+//max-container flex justify-center flex-wrap gap-9
+//flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16 bg-black
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem; 
+    margin-top: 4rem;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex: 1 1;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    width: 350px;
+    min-height: 350px;
+    border-radius: 15px;
+    box-shadow: 3xl;
+    background-color: black;
+}
