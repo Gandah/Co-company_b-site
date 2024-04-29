@@ -1,12 +1,18 @@
+"use client"
 
-interface ButtonProps {
-    classnames: string;
-    buttonLabel: string;
-}
+import { PropsWithChildren } from "react"
+import { cn } from "@/lib/utils"
 
-const Button = ({ classnames, buttonLabel }: ButtonProps) => {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & PropsWithChildren
+
+
+const Button = ({ className, children,...props }: ButtonProps) => {
   return (
-    <button className={`${classnames}`}>{buttonLabel}</button>
+    <button className={cn("inline-flex items-center justify-center", className)}
+      {...props}
+    >
+      {children}
+    </button>
   )
 }
 

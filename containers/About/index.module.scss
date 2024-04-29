@@ -18,7 +18,6 @@
     
     @include mid-break{
         flex-wrap: wrap;
-        // flex-direction: column;
         
     }
 }
@@ -34,32 +33,94 @@
 }
 
 .aboutParagraph{
-    text-wrap: balance;
-    text-align: center;
+    margin-left: 10rem;
+    
+    @include mid-break{
+        text-align: center;   
+        margin-left: 0rem; 
+    }
 }
 
-//max-container flex justify-center flex-wrap gap-9
-//flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16 bg-black
 
-.cardContainer{
+/* Container for the entire layout */
+.cardContainer {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 4rem; 
-    margin-top: 4rem;
-}
+    padding: 20px;
+    min-height: 568px;
+    max-height: fit-content;
 
-.card{
+    @include mid-break{
+        flex-direction: column-reverse;  
+        gap: 2rem;
+    }
+  }
+  
+  /* Container for the statistics cards */
+  .subContainer {
     display: flex;
     justify-content: center;
-    flex: 1 1;
     align-items: center;
-    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    max-height: fit-content;
+    flex: 1 1 0%;
+    gap: 3rem;
+    margin-right: 16rem;
+    // align-content: space-between;
+    
+
+    @include mid-break{
+        width: 100%;
+        margin-right: 0;
+    }
+  }
+  
+  /* Individual statistics cards */
+  .subCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    background: transparent;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 
+    0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     min-width: 300px;
-    width: 350px;
-    min-height: 350px;
-    border-radius: 15px;
-    box-shadow: 3xl;
-    background-color: black;
-}
+    height: 200px;
+
+    @include mid-break{
+        align-items: center;
+    }
+  }
+  
+  /* Headings for the statistics */
+  .subCardHeading {
+    font-family: 'Spectral', serif;
+    color: #333;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .subCard__customers{
+     h3{
+        color: var(--perennialGreen-color);
+     }
+
+     p{
+        color: var(--citadel-color);
+     }
+  }
+
+  .subCard__experience{
+    background-color: var(--perennialGreen-color);
+
+    h3,p{
+        color: var(--ivory-color);
+    }
+  }

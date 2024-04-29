@@ -11,7 +11,7 @@ const NavBar = () => {
     const [toggle, setToggle] = useState(false);
     
   return (
-    <header className="padding-x pb-8 z-10 w-full">
+    <header className="padding-r padding-l pb-8 z-10 w-full">
         <nav className="flex justify-between max-container" role="navigation">
             <Link href="/">
                 <Image src="/Co.svg" width={64} height={64} alt="logo"/>
@@ -24,11 +24,11 @@ const NavBar = () => {
                         </Link>
                     </li>
                 ))}
-                <Button classnames={`inline-flex items-center justify-center whitespace-nowrap 
+                <Button className={`whitespace-nowrap 
                 rounded-2xl text-sm text-Ivory font-medium  px-4 py-1 animate-shimmer
                  bg-[linear-gradient(110deg,#436850,45%,#3D735E,55%,#436850)] bg-[length:200%_100%]
                   transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400
-                   focus:ring-offset-2 focus:ring-offset-slate-50`} buttonLabel="Contact Us" />
+                   focus:ring-offset-2 focus:ring-offset-slate-50`}>Contact Us</Button>
             </ul>
 
 
@@ -45,7 +45,7 @@ const NavBar = () => {
           </div>
 
           {/* Side Drawer */}
-          <div className={toggle? "fixed z-[9999] top-0 right-0 w-[300px] h-screen bg-ashGray transition-all duration-300 ease-in-out": "fixed z-[9999] top-0 right-[-100vw] w-[300px] h-screen bg-ashGray transition-all duration-300 ease-in-out"}>
+          <div className={toggle? "fixed z-[9999] top-0 right-0 w-[300px] h-screen bg-ashGray transition-all duration-300 ease-in-out": "fixed z-[9999] top-0 right-[-200vw] w-[300px] h-screen bg-ashGray transition-all duration-300 ease-in-out"}>
             <Cross1Icon onClick={() => {setToggle(!toggle)}} 
               className="absolute top-8 right-8 cursor-pointer mt-4"
               width={24} 

@@ -34,6 +34,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       colors: {
         "vicGreen": "#94E28D",
         "perennialGreen": "#436850",
@@ -43,6 +46,7 @@ const config = {
         "Ivory": "#FFFFF0",
         "lightGray": "#BBC8D4",
         "ashGray": "#F6F9F6",
+        "sunny": "#F1ED7E",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

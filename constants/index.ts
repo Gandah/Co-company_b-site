@@ -4,3 +4,8 @@ export const navLinks = [
     { href: "#properties", label: "Properties" },
     { href: "#agents", label: "Agents" },
 ];
+
+export const statistics = [
+    { value: '200K+', label: 'Satisfied Customers' },
+    { value: '25+', label: 'Years of Experience' },
+];

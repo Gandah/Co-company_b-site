@@ -22,9 +22,9 @@ const SearchBar = () => {
       </div>
 
       {/* Search bar */}
-      <div className="flex justify-center items-center gap-2 min-w-[44rem] h-auto bg-Ivory p-4 rounded-b-xl rounded-tr-xl">
-        <div className="flex justify-center items-center gap-2">
-          <HomeIcon width={24} height={24} />
+      <div className="flex flex-1 justify-center items-center gap-2 min-w-[44rem] h-auto bg-Ivory p-4 rounded-b-xl rounded-tr-xl">
+        <div className="flex justify-center items-center gap-2 ml-4">
+          <HomeIcon  width={24} height={24} />
           <Selector />
         </div>
         <div className="w-[0.3px] h-8 bg-night opacity-20"/>

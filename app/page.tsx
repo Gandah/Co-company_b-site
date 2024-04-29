@@ -1,7 +1,7 @@
-import NavBar from "@/components/shared/NavBar";
-import About from "@/containers/About/About";
 import Hero from "@/containers/Hero/Hero";
-import Image from "next/image";
+import About from "@/containers/About";
+import Catalogue from "@/containers/Catalogue";
+
 
 export default function Home() {
   return (
@@ -11,6 +11,9 @@ export default function Home() {
         </section>
         <section className="relative padding-l padding-r mt-24">
             <About />         
+        </section>
+        <section className="relative padding-l padding-r mt-24">
+            <Catalogue/>      
         </section>
       </main>
   );

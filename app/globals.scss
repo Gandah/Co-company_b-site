@@ -53,6 +53,17 @@ h6 {
   @extend %h6 !optional;
 }
 
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  // Help prevent overflow of long words/names/URLs
+  text-wrap: balance;
+  line-height: 1.5;
+}
+
 @layer base {
     :root {
       --background: 0 0% 100%;
@@ -144,8 +155,6 @@ h6 {
     margin: 0 auto;
   }
 
- 
-
 }
 
 @layer utilities {
@@ -177,7 +186,7 @@ h6 {
     @apply sm:pb-24 pb-12;
   }
 
-  .group {
+  .flex-group {
     @apply flex justify-center items-center;
   }
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/shared/NavBar";
 import Footer from "@/components/shared/Footer";
-
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.scss";
 import './_css/app.scss'
 
@@ -25,6 +25,7 @@ export default function RootLayout({
               <NavBar />
                 {children}
               <Footer/>
+              <Toaster />
           </div>
         </body>
     </html>

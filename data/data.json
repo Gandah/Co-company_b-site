@@ -1,0 +1,60 @@
+{
+    "properties": [
+      {
+        "id": 1,
+        "image_url": "House1",
+        "price": "GHS 500,000",
+        "address": "31 Gordon Street",
+        "location": "Labadi, Accra",
+        "area": 2087,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "is_favorite": false
+      },
+      {
+        "id": 2,
+        "image_url": "House2",
+        "price": "GHS 800,000",
+        "address": "50 Maple Road",
+        "location": "East Legon, Accra",
+        "area": 3100,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "is_favorite": true
+      },
+      {
+        "id": 3,
+        "image_url": "House3",
+        "price": "GHS 350,000",
+        "address": "100 Oak Street",
+        "location": "Osu, Accra",
+        "area": 1200,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "is_favorite": false
+      },
+      {
+        "id": 4,
+        "image_url": "House4",
+        "price": "GHS 950,000",
+        "address": "Adjetey Street 22",
+        "location": "Adenta, Accra",
+        "area": 4000,
+        "bedrooms": 6,
+        "bathrooms": 5,
+        "is_favorite": true
+      },
+      {
+        "id": 5,
+        "image_url": "House5",
+        "price": "GHS 470,000",
+        "address": "Lemur Street 1",
+        "location": "North legon, Accra",
+        "area": 3460,
+        "bedrooms": 6,
+        "bathrooms": 5,
+        "is_favorite": true
+      }
+    ]
+  }
+  

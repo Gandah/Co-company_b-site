@@ -39,7 +39,15 @@
     text-align: center;
     text-wrap: balance;
     color: inherit;
- }
+
+    @include mid-break{
+        font-size: 2.5em;
+    }
+
+    @media only screen and (max-width: 375px){
+        font-size: 1.8em;
+    }
+}
 
  .heroSpan{
     margin-left: 0.5rem;

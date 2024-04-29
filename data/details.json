@@ -1,0 +1,139 @@
+{
+    "properties": [
+      {
+        "id": 1,
+        "image_url": "House1",
+        "price": "GHS 500,000",
+        "address": "31 Gordon Street",
+        "location": "Labadi, Accra",
+        "area": 2087,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "is_favorite": false,
+        "house_plan_name": "Trovilla Plan in Sereno Canyon - Estate Collection by Toll Brothers",
+        "collection": "Estate Collection",
+        "description": "Bright living spaces combine with a modern floor plan with high ceilings throughout. Large windows ensure maximum light exposure and views.",
+        "payment":{
+          "cash": "GHS 500,000",
+          "emi_per_6-months":"GHS 3000"
+        },
+        "Highlights": [
+          {
+            "Property_reference": 4445
+          },
+          {
+            "Year_built": 2020
+          },
+          {
+            "Parking_space": 1
+          },
+          {
+            "Market_status": "Available"
+          },
+          {
+            "Type": "Apartment"
+          }
+          ,
+          {
+            "bedrooms": 4
+          }
+          ,
+          {
+            "bathrooms": 3
+          }
+        ],
+        "agent_info": {
+          "id": 1,
+          "name": "Brunnos Torres",
+          "email": "bruno@company.com",
+          "phone_number": "+233 20-575-0174",
+          "profile_picture": "picture.jpg"
+        }
+      },
+      {
+        "id": 2,
+        "image_url": "url_to_property_image_2.jpg",
+        "price": "GHS 800,000",
+        "address": "50 Maple Road",
+        "location": "Winchester, MA 01890",
+        "area": 3100,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "is_favorite": true,
+        "house_plan_name": "Maplewood Estate",
+        "collection": "Luxury Collection",
+        "description": "Elegant and spacious home with a beautiful backyard and pool. High-end finishes throughout.",
+        "features": [
+          {
+            "feature_type": "Swimming Pool",
+            "description": "Private pool"
+          },
+          {
+            "feature_type": "Home Theater",
+            "description": "State-of-the-art home theater"
+          },
+          {
+            "feature_type": "Wine Cellar",
+            "description": "Climate-controlled wine cellar"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "image_url": "url_to_property_image_3.jpg",
+        "price": "GHS 350,000",
+        "address": "100 Oak Street",
+        "location": "Cambridge, MA 02139",
+        "area": 1200,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "is_favorite": false,
+        "house_plan_name": "Cozy Cottage",
+        "collection": "Starter Homes",
+        "description": "Charming cottage with a cozy atmosphere. Perfect for first-time homebuyers.",
+        "features": [
+          {
+            "feature_type": "Fireplace",
+            "description": "Traditional fireplace"
+          },
+          {
+            "feature_type": "Garden",
+            "description": "Beautiful garden space"
+          },
+          {
+            "feature_type": "Covered Porch",
+            "description": "Relaxing covered porch"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "image_url": "url_to_property_image_4.jpg",
+        "price": "GHS 950,000",
+        "address": "22 Elm Street",
+        "location": "Lexington, MA 02421",
+        "area": 4000,
+        "bedrooms": 6,
+        "bathrooms": 5,
+        "is_favorite": true,
+        "house_plan_name": "Elmwood Manor",
+        "collection": "Grand Estates",
+        "description": "Spacious and luxurious home with a grand foyer, gourmet kitchen, and beautiful landscaping.",
+        "features": [
+          {
+            "feature_type": "Chef's Kitchen",
+            "description": "Professional-grade kitchen"
+          },
+          {
+            "feature_type": "Home Office",
+            "description": "Private home office"
+          },
+          {
+            "feature_type": "Outdoor Patio",
+            "description": "Expansive outdoor patio"
+          }
+        ]
+      }
+    ]
+  }
+  
